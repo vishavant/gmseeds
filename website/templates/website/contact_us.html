@@ -1,0 +1,105 @@
+{% extends "website/base.html" %}
+
+{% load static %}
+
+{% block page_title %}Contact{% endblock page_title %}
+
+{% block page_content %}
+<div class="intro-section site-blocks-cover innerpage" style="background-image: url('{% static "website/images/hero_1.jpg" %}');">
+    <div class="container">
+      <div class="row align-items-center text-center">
+        <div class="col-lg-12 mt-5" data-aos="fade-up">
+          <h1>Contact Us</h1>
+          <p class="text-white text-center">
+            <a href="index.html">Home</a>
+            <span class="mx-2">/</span>
+            <span>Contact</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="site-section">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-6">
+          
+            <div class="contact-form">
+                <form action="" method="post" enctype="multipart/form-data" class="">
+              {% csrf_token %}
+              {% for fm in form %}
+                  <div class="form-group mb-3">
+                  {{fm.label_tag}} {{fm}} <small class="text-danger">{{fm.error|striptags}}</small>
+                  </div>
+                  {% endfor %}
+                  <div class="row">
+                    <div class="col-12">
+                      <input type="submit" value="Send Message" class="btn btn-primary rounded-0 px-3 px-5">
+                    </div>
+                  </div>
+                  {% if form.non_field_erros %}
+                      {% for error in form.non_field_erros %}
+                      <p class="alert alert-danger my-3">{{error}}</p>
+                      {% endfor %}
+                  {% endif %}
+                </form>
+              </div>
+
+          
+        </div>
+        <div class="col-lg-6">
+
+
+
+          <div class="row">
+            <div class="col-md-6 mb-4 mb-md-0">
+              <div class="testimonial">
+                <img src="{% static "website/images/person_3.jpg" %}" alt="">
+                <blockquote>
+                  <p>&ldquo;Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident deleniti iusto molestias, dolore vel fugiat ab placeat ea?&rdquo;</p>
+                </blockquote>
+                <p class="client-name">James Smith</p>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4 mb-md-0">
+              <div class="testimonial">
+                <img src="{% static "website/images/person_4.jpg" %}" alt="">
+                <blockquote>
+                  <p>&ldquo;Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident deleniti iusto molestias, dolore vel fugiat ab placeat ea?&rdquo;</p>
+                </blockquote>
+                <p class="client-name">Kate Smith</p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="py-5 bg-primary block-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h3 class="text-white">Subscribe To Newsletter</h3>
+          <p class="opacity-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, reprehenderit!</p>
+        </div>
+        <div class="col-lg-6">
+          <form action="#" class="form-subscribe d-flex align-items-stretch">
+            <input type="email" class="form-control h-100" placeholder="Enter your e-mail">
+            <input type="submit" class="btn btn-secondary px-4" value="Subcribe">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+{% endblock page_content %}
