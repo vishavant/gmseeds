@@ -94,8 +94,8 @@ WSGI_APPLICATION = 'gmseeds.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'gmseeds',
-        'USER': 'gmseeds',
+        'NAME': 'gmmseeds',
+        'USER': 'gmmseeds',
         'PASSWORD': 'Techno@9020',
         'HOST': 'localhost',
         'PORT': '',
