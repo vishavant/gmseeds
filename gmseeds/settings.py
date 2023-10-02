@@ -91,16 +91,16 @@ WSGI_APPLICATION = 'gmseeds.wsgi.application'
 
 
 # Production Database
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'gmmseeds',
-        'USER': 'gmmseeds',
-        'PASSWORD': 'Techno@9020',
-        'HOST': 'localhost',
-        'PORT': '',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'gmmseeds',
+#         'USER': 'gmmseeds',
+#         'PASSWORD': 'Techno@9020',
+#         'HOST': 'localhost',
+#         'PORT': '',
+#     }
+# }
 
 
 # Password validation
