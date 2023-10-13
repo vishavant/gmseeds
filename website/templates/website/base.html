@@ -69,8 +69,8 @@
                 <span class="icon-room text-primary"></span>
               </div>
               <div class="text">
-                <span class="h4 d-block">Taramandal</span>
-                <span class="caption-text">Gorakhpur, Uttar Pradesh</span>
+                <span class="h4 d-block">NB -236/T-K, Ganesh Dham Colony, Newada, Sunderpur</span>
+                <span class="caption-text">Varanasi - 221005 (U.P.)</span>
               </div>
             </div>
 
@@ -81,7 +81,7 @@
                 <span class="icon-phone text-primary"></span>
               </div>
               <div class="text">
-                <span class="h4 d-block">+1 2094 392 4312</span>
+                <span class="h4 d-block">+91-7711011141</span>
                 <span class="caption-text">Call us</span>
               </div>
             </div>
@@ -93,7 +93,7 @@
                 <span class="icon-envelope text-primary"></span>
               </div>
               <div class="text">
-                <span class="h4 d-block">info@gmail.com</span>
+                <span class="h4 d-block">kishanganesha2607@gmail.com</span>
                 <span class="caption-text">Email us</span>
               </div>
             </div>
@@ -116,20 +116,16 @@
               <div class="mx-auto">
                 <nav class="site-navigation position-relative text-right" role="navigation">
                   <ul class="site-menu main-menu js-clone-nav mr-auto d-none pl-0 d-lg-block">
-                    <li class="active">
+                    <li {% if request.path == '/' %}class="active"{% endif %}>
                       <a href="/" class="nav-link text-left">Home</a>
                     </li>
-                    <li>
+                    <li {% if request.path == '/about' %}class="active"{% endif %}>
                       <a href="{% url "website:about" %}" class="nav-link text-left">About Us</a>
                     </li>
-                    <li>
+                    <li {% if request.path == '/product' %}class="active"{% endif %}>
                       <a href="{% url "website:product" %}" class="nav-link text-left">Our Products</a>
                     </li>
-                    {% comment %} <li>
-                      <a href="testimonials.html" class="nav-link text-left">Testimonials</a>
-                    </li> 
-                    <li><a href="blog.html" class="nav-link text-left">Blog</a></li>{% endcomment %}
-                    <li>
+                    <li {% if request.path == '/contact' %}class="active"{% endif %}>
                       <a href="{% url "website:contact" %}" class="nav-link text-left">Contact</a>
                     </li>
                   </ul>                                                                                                                                                                                                                                                                                          
