@@ -10,7 +10,7 @@ home
 {% block page_content %}
 
 <div class="hero-slide owl-carousel site-blocks-cover">
-    <div class="intro-section" style="background-image: url('{% static "website\img\products\1623501422702.jpg" %}');">
+    <div class="intro-section" style="background-image: url('{% static "website\images\sliders\Slider_1.jpeg" %}');">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-7 justify-content-center mx-auto text-center" data-aos="fade-up">
@@ -31,7 +31,7 @@ home
       </div>
     </div>
 
-    <div class="intro-section" style="background-image: url('{% static "website\img\products\The-Right-Seed-Germination-Temperature-for-Your-Plants-fb.jpg" %}');">
+    <div class="intro-section" style="background-image: url('{% static "\website\images\sliders\Slider_2.jpeg" %}');">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-7 justify-content-center mx-auto text-center" data-aos="fade-up">
@@ -42,7 +42,7 @@ home
       </div>
     </div>
 
-    <div class="intro-section" style="background-image: url('{% static "website/images/hero_4.jpg" %}');">
+    {% comment %} <div class="intro-section" style="background-image: url('{% static "website/images/hero_4.jpg" %}');">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-7 justify-content-center mx-auto text-center" data-aos="fade-up">
@@ -51,7 +51,7 @@ home
           </div>
         </div>
       </div>
-    </div>
+    </div> {% endcomment %}
 
     <div class="intro-section" style="background-image: url('{% static "website\images\sliders\Seeds.jpg" %}');">
       <div class="container">
@@ -78,6 +78,173 @@ home
   </div>
   <!-- END slider -->
 
+  <div class="site-section">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+          <a data-fancybox href="https://youtu.be/ECibetK2EYI?si=5mFFm83_acR2nriB" class="video-1">
+            <span class="play"><span class=" icon-play"></span></span>
+            <img src="{% static "website\img\products\hero_image2.jpeg" %}" alt="Image" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-lg-5 order-lg-1">
+          <h2 class="text-primary mb-4">Plants Make Life Better</h2>
+          <p class="mb-4">From the air we breathe to the food we eat, plants are the unsung heroes of our world. They bring beauty, nourishment, and vitality to our lives. Discover the extraordinary ways in which plants make life better, from lush landscapes to sustainable ecosystems – they're the green heartbeat of our planet.</p>
+          <ul class="list-unstyled ul-check primary">
+            <li>High-Quality Seeds, Farming Solutions, and Pesticides</li>
+            <li>We Nurture Growth, One Seed at a Time</li>
+            <li>Sustainable Agriculture for a Brighter Tomorrow</li>
+          </ul>
+          <p><a href="{% url "website:contact" %}" class="btn btn-primary">Get in touch</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+ <!-- Product start block --> 
+  <div class="site-section block-3">
+    <div class="container">
+
+      <div class="mb-5">
+        <h3 class="section-subtitle text-white opacity-50">GM Seeds</h3>
+        <h2 class="section-title mb-4">Explore Our <strong>Products</strong></h2>
+      </div>
+
+      <div class="projects-carousel-wrap">
+        <div class="owl-carousel owl-slide-3">
+          <div class="project-item">
+            <div class="project-item-contents">
+              <a href="#">
+                <span class="project-item-category">Our Seeds</span>
+                <h2 class="project-item-title">
+                  Planting
+                </h2>
+              </a>
+            </div>
+            <img src="{% static "website\img\products\Group_1.png" %}" alt="Image" class="img-fluid">
+          </div>
+          <div class="project-item">
+            <div class="project-item-contents">
+              <a href="#">
+                <span class="project-item-category">We do</span>
+                <h2 class="project-item-title">
+                  Mulching
+                </h2>
+              </a>
+            </div>
+            <img src="{% static "website\img\products\Group_2.png" %}" alt="Image" class="img-fluid">
+          </div>
+          <div class="project-item">
+            <div class="project-item-contents">
+              <a href="#">
+                <span class="project-item-category">We do</span>
+                <h2 class="project-item-title">
+                  Watering
+                </h2>
+              </a>
+            </div>
+            <img src="{% static "website\img\products\Group_3.png" %}" alt="Image" class="img-fluid">
+          </div>
+          <div class="project-item">
+            <div class="project-item-contents">
+              <a href="#">
+                <span class="project-item-category">We do</span>
+                <h2 class="project-item-title">
+                  Fertilizing
+                </h2>
+              </a>
+            </div>
+            <img src="{% static "website\img\products\Group_4.png" %}" alt="Image" class="img-fluid">
+          </div>
+
+          <div class="project-item">
+            <div class="project-item-contents">
+              <a href="#">
+                <span class="project-item-category">We do</span>
+                <h2 class="project-item-title">
+                  Harvesting
+                </h2>
+              </a>
+            </div>
+            <img src="{% static "website\img\products\Group_5.png" %}" alt="Image" class="img-fluid">
+          </div>
+          <div class="project-item">
+            <div class="project-item-contents">
+              <a href="#">
+                <span class="project-item-category">We do</span>
+                <h2 class="project-item-title">
+                  Mowing
+                </h2>
+              </a>
+            </div>
+            <img src="{% static "website\img\products\Group_6.png" %}" alt="Image" class="img-fluid">
+          </div>
+          <div class="project-item">
+            <div class="project-item-contents">
+              <a href="#">
+                <span class="project-item-category">We do</span>
+                <h2 class="project-item-title">
+                  Seeding Plants
+                </h2>
+              </a>
+            </div>
+            <img src="{% static "website\img\products\Group_7.png" %}" alt="Image" class="img-fluid">
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<!-- Product END block -->
+
+
+
+
+
+  <div class="site-section pb-0">
+    <div class="block-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <img src="{% static "website\images\Farmer_in_field1.jpeg" %}" alt="Image " class="img-fluid img-overlap">
+          </div>
+          <div class="col-lg-5 ml-auto">
+            <h3 class="section-subtitle text-white opacity-50">Why Choose Us</h3>
+            <h2 class="section-title mb-4">More than <strong>10 year experience</strong> in seed agriculture industry</h2>
+            <p class="opacity-50">With over a decade of dedicated expertise in the seed agriculture industry, our commitment to excellence is unwavering. Our 10+ years of experience speak volumes about our reliability, innovation, and trustworthiness. Choose us for a partner who understands the intricacies of seed agriculture, ensuring your success and growth.</p>
+
+            <div class="row my-5">
+              <div class="col-lg-12 d-flex align-items-start mb-4">
+                <span class="icon-leaf mr-4 display-4"></span>
+                <div>
+                  <h4 class="m-0 h5 text-white">Always Fresh</h4>
+                  <p class="text-white opacity-50">Our commitment to delivering perpetual freshness.</p>
+                </div>
+              </div>
+              <div class="col-lg-12 d-flex align-items-start mb-4">
+                <span class="icon-lemon-o mr-4 display-4"></span>
+                <div>
+                  <h4 class="m-0 h5 text-white">Organic Seed</h4>
+                  <p class="text-white opacity-50">Explore our eco-friendly seed collection and experience the essence of sustainable growth.</p>
+                </div>
+              </div>
+              <div class="col-lg-12 d-flex align-items-start">
+                <span class="icon-dashboard mr-4 display-4"></span>
+                <div>
+                  <h4 class="m-0 h5 text-white">Healtier Crops</h4>
+                  <p class="text-white opacity-50">Nurturing growth for a bountiful future.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END block-2 -->
 
   <div class="site-section services-1-wrap">
     <div class="container">
@@ -191,178 +358,6 @@ home
   </div>
   <!-- END services -->
 
- <!-- Product start block --> 
-  <div class="site-section block-3">
-    <div class="container">
-
-      <div class="mb-5">
-        <h3 class="section-subtitle text-white opacity-50">GM Seeds</h3>
-        <h2 class="section-title mb-4">Explore Our <strong>Products</strong></h2>
-      </div>
-
-      <div class="projects-carousel-wrap">
-        <div class="owl-carousel owl-slide-3">
-          <div class="project-item">
-            <div class="project-item-contents">
-              <a href="#">
-                <span class="project-item-category">Our Seeds</span>
-                <h2 class="project-item-title">
-                  Planting
-                </h2>
-              </a>
-            </div>
-            <img src="{% static "website\img\products\Group_1.png" %}" alt="Image" class="img-fluid">
-          </div>
-          <div class="project-item">
-            <div class="project-item-contents">
-              <a href="#">
-                <span class="project-item-category">We do</span>
-                <h2 class="project-item-title">
-                  Mulching
-                </h2>
-              </a>
-            </div>
-            <img src="{% static "website\img\products\Group_2.png" %}" alt="Image" class="img-fluid">
-          </div>
-          <div class="project-item">
-            <div class="project-item-contents">
-              <a href="#">
-                <span class="project-item-category">We do</span>
-                <h2 class="project-item-title">
-                  Watering
-                </h2>
-              </a>
-            </div>
-            <img src="{% static "website\img\products\Group_3.png" %}" alt="Image" class="img-fluid">
-          </div>
-          <div class="project-item">
-            <div class="project-item-contents">
-              <a href="#">
-                <span class="project-item-category">We do</span>
-                <h2 class="project-item-title">
-                  Fertilizing
-                </h2>
-              </a>
-            </div>
-            <img src="{% static "website\img\products\Group_4.png" %}" alt="Image" class="img-fluid">
-          </div>
-
-          <div class="project-item">
-            <div class="project-item-contents">
-              <a href="#">
-                <span class="project-item-category">We do</span>
-                <h2 class="project-item-title">
-                  Harvesting
-                </h2>
-              </a>
-            </div>
-            <img src="{% static "website\img\products\Group_5.png" %}" alt="Image" class="img-fluid">
-          </div>
-          <div class="project-item">
-            <div class="project-item-contents">
-              <a href="#">
-                <span class="project-item-category">We do</span>
-                <h2 class="project-item-title">
-                  Mowing
-                </h2>
-              </a>
-            </div>
-            <img src="{% static "website\img\products\Group_6.png" %}" alt="Image" class="img-fluid">
-          </div>
-          <div class="project-item">
-            <div class="project-item-contents">
-              <a href="#">
-                <span class="project-item-category">We do</span>
-                <h2 class="project-item-title">
-                  Seeding Plants
-                </h2>
-              </a>
-            </div>
-            <img src="{% static "website\img\products\Group_7.png" %}" alt="Image" class="img-fluid">
-          </div>
-
-
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-<!-- Product END block -->
-
-<div class="site-section">
-  <div class="container">
-    <div class="row justify-content-between align-items-center">
-      <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
-        <a data-fancybox href="https://youtu.be/ECibetK2EYI?si=5mFFm83_acR2nriB" class="video-1">
-          <span class="play"><span class=" icon-play"></span></span>
-          <img src="{% static "website\img\products\hero_image2.jpeg" %}" alt="Image" class="img-fluid">
-        </a>
-      </div>
-      <div class="col-lg-5 order-lg-1">
-        <h2 class="text-primary mb-4">Plants Make Life Better</h2>
-        <p class="mb-4">From the air we breathe to the food we eat, plants are the unsung heroes of our world. They bring beauty, nourishment, and vitality to our lives. Discover the extraordinary ways in which plants make life better, from lush landscapes to sustainable ecosystems – they're the green heartbeat of our planet.</p>
-        <ul class="list-unstyled ul-check primary">
-          <li>High-Quality Seeds, Farming Solutions, and Pesticides</li>
-          <li>We Nurture Growth, One Seed at a Time</li>
-          <li>Sustainable Agriculture for a Brighter Tomorrow</li>
-        </ul>
-        <p><a href="{% url "website:contact" %}" class="btn btn-primary">Get in touch</a></p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-  <div class="site-section pb-0">
-    <div class="block-2">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 mb-4 mb-lg-0">
-            <img src="{% static "website/images/img_long_11.jpg" %}" alt="Image " class="img-fluid img-overlap">
-          </div>
-          <div class="col-lg-5 ml-auto">
-            <h3 class="section-subtitle text-white opacity-50">Why Choose Us</h3>
-            <h2 class="section-title mb-4">More than <strong>50 year experience</strong> in agriculture industry</h2>
-            <p class="opacity-50">Reprehenderit, odio laboriosam? Blanditiis quae ullam quasi illum minima nostrum perspiciatis error consequatur sit nulla.</p>
-
-            <div class="row my-5">
-              <div class="col-lg-12 d-flex align-items-start mb-4">
-                <span class="icon-leaf mr-4 display-4"></span>
-                <div>
-                  <h4 class="m-0 h5 text-white">Always Fresh</h4>
-                  <p class="text-white opacity-50">Lorem ipsum dolor sit amet.</p>
-                </div>
-              </div>
-              <div class="col-lg-12 d-flex align-items-start mb-4">
-                <span class="icon-lemon-o mr-4 display-4"></span>
-                <div>
-                  <h4 class="m-0 h5 text-white">Organic Seed</h4>
-                  <p class="text-white opacity-50">Lorem ipsum dolor sit amet.</p>
-                </div>
-              </div>
-              <div class="col-lg-12 d-flex align-items-start">
-                <span class="icon-dashboard mr-4 display-4"></span>
-                <div>
-                  <h4 class="m-0 h5 text-white">Healtier Crops</h4>
-                  <p class="text-white opacity-50">Lorem ipsum dolor sit amet.</p>
-                </div>
-              </div>
-
-
-
-            </div>
-
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- END block-2 -->
-
-
   
 
   
@@ -380,7 +375,7 @@ home
       <div class="row">
         <div class="col-md-6 mb-4 mb-md-0">
           <div class="testimonial">
-            <img src="{% static "website/images/person_3.jpg" %}" alt="">
+            <img src="{% static "website\images\for_testimonial2.jpeg" %}" alt="">
             <blockquote>
               <p>&ldquo;Since I started using GMM Seeds, my garden has flourished. Their seeds are simply the best, and the support they provide is exceptional. I wouldn't trust anyone else for my gardening needs.&rdquo;</p>
             </blockquote>
@@ -389,11 +384,11 @@ home
         </div>
         <div class="col-md-6 mb-4 mb-md-0">
           <div class="testimonial">
-            <img src="{% static "website/images/person_4.jpg" %}" alt="">
+            <img src="{% static "website\images\for_testimonial.jpeg" %}" alt="">
             <blockquote>
               <p>&ldquo;GMM Seeds has made gardening a breeze. Their seeds are top-notch, and the results are stunning. Plus, their customer service is fantastic. I'm a happy and loyal customer!&rdquo;</p>
             </blockquote>
-            <p class="client-name">Priya Kapoor</p>
+            <p class="client-name">Ajay Khattar</p>
           </div>
         </div>
       </div>

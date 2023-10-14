@@ -36,3 +36,7 @@ def product(request):
 
 class ThankYou(TemplateView):
     template_name = "website/thank_you.html" 
+
+
+def product_detail(request):
+    return render(request, "website/product_detail_page.html")
